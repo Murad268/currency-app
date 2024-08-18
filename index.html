@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valyuta Dəyişmə Tətbiqi</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Valyuta Dəyişmə</h1>
+    <form id="currencyForm">
+      <div class="form-group">
+        <label for="amount">Məbləğ:</label>
+        <input type="number" id="amount" name="amount" placeholder="Məbləği daxil edin" required>
+      </div>
+      <div class="form-group">
+        <label for="fromCurrency">Valyuta:</label>
+        <select id="fromCurrency" name="fromCurrency" required>
+        
+          <!-- Digər valyutalar əlavə oluna bilər -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="toCurrency">Çevriləcək Valyuta:</label>
+        <select id="toCurrency" name="toCurrency" required>
+      
+         
+        </select>
+      </div>
+      <button type="submit">Çevir</button>
+    </form>
+    <div id="result">
+      <!-- Nəticə burada göstəriləcək -->
+    </div>
+  </div>
+
+  <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
