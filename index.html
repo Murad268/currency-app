@@ -11,6 +11,7 @@
 <body>
   <div class="container">
     <h1>Valyuta Dəyişmə</h1>
+    <div id="loading" style="display: none;">Yüklənir...</div> 
     <form id="currencyForm">
       <div class="form-group">
         <label for="amount">Məbləğ:</label>
@@ -18,22 +19,16 @@
       </div>
       <div class="form-group">
         <label for="fromCurrency">Valyuta:</label>
-        <select id="fromCurrency" name="fromCurrency" required>
-        
-          <!-- Digər valyutalar əlavə oluna bilər -->
-        </select>
+        <select id="fromCurrency" name="fromCurrency" required></select>
       </div>
       <div class="form-group">
         <label for="toCurrency">Çevriləcək Valyuta:</label>
-        <select id="toCurrency" name="toCurrency" required>
-      
-         
-        </select>
+        <select id="toCurrency" name="toCurrency" required></select>
       </div>
-      <button type="submit">Çevir</button>
+      <button type="submit" id="convertButton">Çevir</button>
     </form>
     <div id="result">
-      <!-- Nəticə burada göstəriləcək -->
+
     </div>
   </div>
 
